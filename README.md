@@ -1,10 +1,16 @@
-# EXAMEN FINAL:
+# 🍕 Base de Datos de una Pizzería · MySQL
 
-#### Nombre: Allison Rocio Vargas Mejìa
+Base de datos en **MySQL** para una pizzería: clientes, productos, ingredientes, categorías, combos, pedidos y adiciones personalizadas (11 tablas). Incluye el modelo lógico y físico, y consultas para analizar las ventas del negocio.
 
-# DIAGRAMAS:
+**Script completo:** [`allis.sql`](allis.sql)
 
-Modelo lògico, modelo fìsico 
+**Temas:** modelado relacional · `JOIN` · `GROUP BY` · funciones de agregación (`SUM`, `COUNT`)
+
+> Proyecto final del módulo de bases de datos · Allison Rocío Vargas Mejía
+
+# Diagramas
+
+Modelo lógico y modelo físico 
 
 
 ![alt text](image.png)
@@ -15,7 +21,7 @@ Modelo lògico, modelo fìsico
 
 
 
-# Consultas a realizadas:
+# Consultas realizadas
 
 
     1. Productos más vendidos (pizza, panzarottis, bebidas, etc.)
