@@ -18,7 +18,7 @@ jobs:
           --health-cmd="mysqladmin ping -h 127.0.0.1 -proot"
           --health-interval=5s --health-timeout=5s --health-retries=20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Ejecutar allis.sql
         run: mysql -h 127.0.0.1 -uroot -proot < allis.sql
       - name: Verificar que se crearon las 11 tablas
