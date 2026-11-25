@@ -255,7 +255,8 @@ WHERE c.category_name = 'Panzarotti' AND t.topping_name = 'Extra Queso';
 -- 9. Pedidos que incluyen bebidas como parte de un combo
 SELECT DISTINCT od.order_id, c.combo_name
 FROM order_detail od
-JOIN combo_detail cd ON od.combo_id = cd.combo_id
+JOIN combo c ON od.combo_id = c.combo_id
+JOIN combo_detail cd ON c.combo_id = cd.combo_id
 JOIN product p ON cd.product_id = p.product_id
 JOIN category cat ON p.category_id = cat.category_id
 WHERE cat.category_name = 'Bebida';
